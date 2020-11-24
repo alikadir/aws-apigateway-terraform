@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c8bc223-1631-4326-af6d-585d913f414a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/aws-apigateway-terraform.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="6c8bc223-1631-4326-af6d-585d913f414a" name="Default Changelist" comment="added description of execution hierarchy for the CLI command in README.md">
+      <change afterPath="$PROJECT_DIR$/modules/api/endpoints/tvguide/themes.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/api/endpoints/tvguide/variables.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/http-module/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/http-module/outputs.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/http-module/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/api/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/api/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/api/mock_resource.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/api/mock_resource.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/api/outputs.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/api/outputs.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/lambda/files/app.zip" beforeDir="false" afterPath="$PROJECT_DIR$/modules/lambda/files/app.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform.tfstate.backup" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfstate.backup" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +27,15 @@
       <option value="directory" />
     </option>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Terraform" />
+        <option value="Terraform Main" />
+        <option value="Terraform Output" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -27,6 +45,9 @@
     <bower.json value="" />
   </component>
   <component name="ProjectId" id="1kgMKYBtNCeZToE5mgBinnZozhp" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -36,11 +57,14 @@
     <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HCL-Terraform" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/modules/http-module" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -49,8 +73,16 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="yiiguxing.plugin.translate" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modules/http-module" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modules/api" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Plan directory aws-apigateway-terraform" type="#org.intellij.plugins.hcl.terraform.run.TerraformConfigurationType" factoryName="Terraform Plan" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
@@ -83,8 +115,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606117719820</updated>
-      <workItem from="1606117722536" duration="4479000" />
+      <workItem from="1606117722536" duration="19306000" />
     </task>
+    <task id="LOCAL-00001" summary="added description for the CLI command in README.md">
+      <created>1606123468822</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606123468822</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added description of execution hierarchy for the CLI command in README.md">
+      <created>1606210877509</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606210877509</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,5 +147,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="added description for the CLI command in README.md" />
+    <MESSAGE value="added description of execution hierarchy for the CLI command in README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="added description of execution hierarchy for the CLI command in README.md" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
