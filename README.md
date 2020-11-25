@@ -16,3 +16,8 @@ so, the extension of the variable file of the stage is different _(.tfvar)_
 
 Terraform executes contents of _.tf_ files without any hierarchy.
 so The commands (resource, module, data, provider, variable, output, etc.) in the _.tf_ files in the same folder determine the execution hierarchy
+
+##### lambda execution error
+https://github.com/aws/serverless-application-model/issues/59
+
+!worked Authentication function when test on SampleApi at another region 

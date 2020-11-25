@@ -13,3 +13,4 @@ variable "endpoint_name" {
 variable "endpoint_url" {
   type = string
 }
+

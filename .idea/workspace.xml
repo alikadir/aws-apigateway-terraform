@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c8bc223-1631-4326-af6d-585d913f414a" name="Default Changelist" comment="added description of execution hierarchy for the CLI command in README.md">
-      <change afterPath="$PROJECT_DIR$/modules/api/endpoints/tvguide/themes.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/api/endpoints/tvguide/variables.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/http-module/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/http-module/outputs.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/http-module/variables.tf" afterDir="false" />
+    <list default="true" id="6c8bc223-1631-4326-af6d-585d913f414a" name="Default Changelist" comment="converting project to modular structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/api/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/api/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/api/mock_resource.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/api/mock_resource.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/api/outputs.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/api/outputs.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/lambda/files/app.zip" beforeDir="false" afterPath="$PROJECT_DIR$/modules/lambda/files/app.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/http-module/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/http-module/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/http-module/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/http-module/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/lambda/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/lambda/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poc.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/poc.tfvars" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/terraform.tfstate.backup" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfstate.backup" afterDir="false" />
     </list>
@@ -37,6 +32,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsBowerSettings">
@@ -104,6 +104,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Terraform.Plan directory aws-apigateway-terraform" />
+        <item itemvalue="Terraform.Plan directory aws-apigateway-terraform" />
+        <item itemvalue="Terraform.Plan directory aws-apigateway-terraform" />
       </list>
     </recent_temporary>
   </component>
@@ -115,7 +117,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606117719820</updated>
-      <workItem from="1606117722536" duration="19306000" />
+      <workItem from="1606117722536" duration="19931000" />
+      <workItem from="1606294384868" duration="3112000" />
     </task>
     <task id="LOCAL-00001" summary="added description for the CLI command in README.md">
       <created>1606123468822</created>
@@ -131,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606210877509</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="converting project to modular structure">
+      <created>1606230269037</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606230269038</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,17 +152,37 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="COLUMN_ID_WIDTH">
+                <map>
+                  <entry key="Table.Default.Author.ColumnIdWidth" value="114" />
+                  <entry key="Table.Default.Date.ColumnIdWidth" value="108" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="added description for the CLI command in README.md" />
     <MESSAGE value="added description of execution hierarchy for the CLI command in README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="added description of execution hierarchy for the CLI command in README.md" />
+    <MESSAGE value="converting project to modular structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="converting project to modular structure" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

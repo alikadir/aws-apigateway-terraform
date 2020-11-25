@@ -17,6 +17,6 @@ module "http-module" {
   authorizer_id    = module.API.authorizer_id
   rest_api_id      = module.API.rest_api_id
   root_resource_id = module.API.root_resource_id
-  endpoint_name    = "tvguide/themes"
+  endpoint_name    = "themes"
   endpoint_url     = "http://api-worker-tvguide.digiturk.com.tr/api/themes"
 }
