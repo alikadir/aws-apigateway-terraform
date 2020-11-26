@@ -1,4 +1,4 @@
-variable "root_resource_id" {
+variable "parent_or_root_resource_id" {
   type = string
 }
 variable "rest_api_id" {

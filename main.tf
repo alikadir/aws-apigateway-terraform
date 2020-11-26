@@ -12,13 +12,47 @@ module "API" {
   authorizer_lambda_arn        = module.Authenticator_Lambda.arn
 }
 
+module "Parent_TvGuide" {
+  source                     = "./modules/parent-resource-module"
+  endpoint_name              = "tv-guide"
+  parent_or_root_resource_id = module.API.root_resource_id
+  rest_api_id                = module.API.rest_api_id
+}
 
-module "http-module" {
-  source           = "./modules/http-module"
-  authorizer_id    = module.API.authorizer_id
-  rest_api_id      = module.API.rest_api_id
-  root_resource_id = module.API.root_resource_id
-  endpoint_name    = "themes"
-  endpoint_url     = "http://api-worker-tvguide.digiturk.com.tr/api/themes"
+module "themes" {
+  source                     = "./modules/http-resource-module"
+  authorizer_id              = module.API.authorizer_id
+  rest_api_id                = module.API.rest_api_id
+  parent_or_root_resource_id = module.Parent_TvGuide.id
+  endpoint_name              = "themes"
+  endpoint_url               = "http://api-worker-tvguide.digiturk.com.tr/api/themes"
+
+}
+
+module "channels" {
+  source                     = "./modules/http-resource-module"
+  authorizer_id              = module.API.authorizer_id
+  rest_api_id                = module.API.rest_api_id
+  parent_or_root_resource_id = module.Parent_TvGuide.id
+  endpoint_name              = "channels"
+  endpoint_url               = "http://api-worker-tvguide.digiturk.com.tr/api/channels"
+}
+
+module "channelsCurrentProgram" {
+  source                     = "./modules/http-resource-module"
+  authorizer_id              = module.API.authorizer_id
+  rest_api_id                = module.API.rest_api_id
+  parent_or_root_resource_id = module.Parent_TvGuide.id
+  endpoint_name              = "channelsCurrentProgram"
+  endpoint_url               = "http://api-worker-tvguide.digiturk.com.tr/api/channelsCurrentProgram"
+}
+
+module "channelByChannelNo" {
+  source                     = "./modules/http-resource-module"
+  authorizer_id              = module.API.authorizer_id
+  rest_api_id                = module.API.rest_api_id
+  parent_or_root_resource_id = module.Parent_TvGuide.id
+  endpoint_name              = "channelByChannelNo"
+  endpoint_url               = "http://api-worker-tvguide.digiturk.com.tr/api/channelByChannelNo"
 }
 
