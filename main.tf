@@ -56,3 +56,11 @@ module "channelByChannelNo" {
   endpoint_url               = "http://api-worker-tvguide.digiturk.com.tr/api/channelByChannelNo"
 }
 
+module "mockSample" {
+  source                     = "./modules/mock-resource-module"
+  authorizer_id              = module.API.authorizer_id
+  rest_api_id                = module.API.rest_api_id
+  parent_or_root_resource_id = module.API.root_resource_id
+  endpoint_name              = "mock-sample"
+  response                   = jsonencode({ status : "success", count : 123, sort : true })
+}

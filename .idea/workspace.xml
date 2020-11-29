@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c8bc223-1631-4326-af6d-585d913f414a" name="Default Changelist" comment="converting project to modular structure">
-      <change afterPath="$PROJECT_DIR$/modules/parent-resource-module/outputs.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/parent-resource-module/variables.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/mock-resource-module/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/mock-resource-module/variables.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.tf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/api/channels_resource.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/http-module/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/http-resource-module/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/http-module/outputs.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/parent-resource-module/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/http-module/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/http-resource-module/variables.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/lambda/files/app.zip" beforeDir="false" afterPath="$PROJECT_DIR$/modules/lambda/files/app.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/terraform.tfstate.backup" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfstate.backup" afterDir="false" />
     </list>
@@ -33,9 +29,9 @@
         <option value="Terraform" />
         <option value="Terraform Main" />
         <option value="Terraform Output" />
-        <option value="Terraform main" />
         <option value="Terraform variables" />
         <option value="Terraform output" />
+        <option value="Terraform main" />
       </list>
     </option>
   </component>
@@ -72,7 +68,7 @@
     <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HCL-Terraform" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/modules/mock-resource-module" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -81,11 +77,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modules/mock-resource-module" />
       <recent name="$PROJECT_DIR$/modules/http-module" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -166,7 +163,9 @@
       <workItem from="1606294384868" duration="3852000" />
       <workItem from="1606375505052" duration="2210000" />
       <workItem from="1606381926937" duration="523000" />
-      <workItem from="1606382718686" duration="12459000" />
+      <workItem from="1606382718686" duration="12512000" />
+      <workItem from="1606475430008" duration="2149000" />
+      <workItem from="1606565055917" duration="1835000" />
     </task>
     <task id="LOCAL-00001" summary="added description for the CLI command in README.md">
       <created>1606123468822</created>
@@ -203,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606394114210</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added modular parent - child resource">
+      <created>1606418521362</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606418521363</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +252,8 @@
     <MESSAGE value="converting project to modular structure" />
     <MESSAGE value="occurred an lambda execution error" />
     <MESSAGE value="Authorizer invocation problem solved" />
-    <option name="LAST_COMMIT_MESSAGE" value="Authorizer invocation problem solved" />
+    <MESSAGE value="added modular parent - child resource" />
+    <option name="LAST_COMMIT_MESSAGE" value="added modular parent - child resource" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
