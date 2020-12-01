@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c8bc223-1631-4326-af6d-585d913f414a" name="Default Changelist" comment="converting project to modular structure">
-      <change afterPath="$PROJECT_DIR$/modules/mock-resource-module/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/mock-resource-module/variables.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.tf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/mock-resource-module/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/mock-resource-module/main.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/terraform.tfstate.backup" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfstate.backup" afterDir="false" />
     </list>
@@ -165,7 +163,9 @@
       <workItem from="1606381926937" duration="523000" />
       <workItem from="1606382718686" duration="12512000" />
       <workItem from="1606475430008" duration="2149000" />
-      <workItem from="1606565055917" duration="1835000" />
+      <workItem from="1606565055917" duration="1968000" />
+      <workItem from="1606752017530" duration="426000" />
+      <workItem from="1606851906824" duration="2676000" />
     </task>
     <task id="LOCAL-00001" summary="added description for the CLI command in README.md">
       <created>1606123468822</created>
@@ -209,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606418521363</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added mock-resource-module phase 1">
+      <created>1606643434398</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606643434398</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +260,8 @@
     <MESSAGE value="occurred an lambda execution error" />
     <MESSAGE value="Authorizer invocation problem solved" />
     <MESSAGE value="added modular parent - child resource" />
-    <option name="LAST_COMMIT_MESSAGE" value="added modular parent - child resource" />
+    <MESSAGE value="added mock-resource-module phase 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="added mock-resource-module phase 1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
