@@ -21,3 +21,12 @@ so The commands (resource, module, data, provider, variable, output, etc.) in th
 https://github.com/aws/serverless-application-model/issues/59
 
 !worked Authentication function when test on SampleApi at another region 
+
+#### Authorizer function error 
+https://forums.aws.amazon.com/thread.jspa?threadID=289351
+should be ttl = 0 
+`CloudWatch log == The client is not authorized to perform this operation.`
+
+
+### stage depends_on all module 
+that is big problem!!

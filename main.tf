@@ -12,11 +12,6 @@ module "API" {
   authorizer_lambda_arn        = module.Authenticator_Lambda.arn
 }
 
-resource "aws_api_gateway_deployment" "dev_deployment" {
-  rest_api_id = module.API.rest_api_id
-  stage_name  = "dev"
-}
-
 module "Parent_TvGuide" {
   source                     = "./modules/parent-resource-module"
   endpoint_name              = "tv-guide"
@@ -69,3 +64,8 @@ module "mockSample" {
   endpoint_name              = "mock-sample"
   response                   = jsonencode({ status : "success", count : 123, sort : true })
 }
+
+
+/*************************************/
+
+

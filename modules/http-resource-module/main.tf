@@ -21,26 +21,4 @@ resource "aws_api_gateway_integration" "my_resource_http_integration" {
   uri                     = var.endpoint_url
 }
 
-/*
-resource "aws_api_gateway_integration_response" "my_resource_http_integration_response" {
-  rest_api_id = var.rest_api_id
-  resource_id = aws_api_gateway_resource.my_resource.id
-  http_method = aws_api_gateway_method.my_resource_any_method.http_method
-  status_code = "200"
-  response_templates = {
-    "application/json" = ""
-  }
-
-}
-
-resource "aws_api_gateway_method_response" "my_resource_http_method_response" {
-  rest_api_id = var.rest_api_id
-  resource_id = aws_api_gateway_resource.my_resource.id
-  http_method = aws_api_gateway_method.my_resource_any_method.http_method
-  status_code = "200"
-  response_models = {
-    "application/json" = "Empty"
-  }
-}
-*/
 

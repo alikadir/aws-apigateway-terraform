@@ -1,12 +1,13 @@
 resource "aws_api_gateway_authorizer" "MyAuthorizer" {
-  name                   = "MyAuthorizer"
-  rest_api_id            = aws_api_gateway_rest_api.sample_api.id
-  authorizer_uri         = var.authorizer_lambda_invoke_arn
-  authorizer_credentials = aws_iam_role.invocation_role.arn
+  name                             = "MyAuthorizer"
+  rest_api_id                      = aws_api_gateway_rest_api.sample_api.id
+  authorizer_uri                   = var.authorizer_lambda_invoke_arn
+  authorizer_credentials           = aws_iam_role.invocation_role.arn
+  authorizer_result_ttl_in_seconds = 0
 }
 
 resource "aws_iam_role" "invocation_role" {
-  name = "api_gateway_auth_invocation"
+  name = "AuthInvocationRole"
   path = "/"
 
   assume_role_policy = jsonencode(
