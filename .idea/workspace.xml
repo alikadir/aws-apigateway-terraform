@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c8bc223-1631-4326-af6d-585d913f414a" name="Default Changelist" comment="converting project to modular structure">
-      <change afterPath="$PROJECT_DIR$/crash.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stages.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/api/authorizer.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/api/authorizer.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/http-resource-module/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/http-resource-module/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/mock-resource-module/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/mock-resource-module/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poc.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/poc.tfvars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/api/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/api/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stages.tf" beforeDir="false" afterPath="$PROJECT_DIR$/stages.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform.tfstate.backup" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +169,7 @@
       <workItem from="1606565055917" duration="1968000" />
       <workItem from="1606752017530" duration="426000" />
       <workItem from="1606851906824" duration="3876000" />
-      <workItem from="1606995215664" duration="12508000" />
+      <workItem from="1606995215664" duration="17228000" />
     </task>
     <task id="LOCAL-00001" summary="added description for the CLI command in README.md">
       <created>1606123468822</created>
@@ -239,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606930431723</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="execution priority problem">
+      <created>1607038388164</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607038388164</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,7 +288,8 @@
     <MESSAGE value="added mock-resource-module phase 1" />
     <MESSAGE value="Mock data phase 2 and added stage" />
     <MESSAGE value="Cleared unnecessary files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleared unnecessary files" />
+    <MESSAGE value="execution priority problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="execution priority problem" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
