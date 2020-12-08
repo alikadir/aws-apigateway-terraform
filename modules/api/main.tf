@@ -4,3 +4,4 @@ resource "aws_api_gateway_rest_api" "sample_api" {
     types = var.endpoint_configuration_types
   }
 }
+

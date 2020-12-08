@@ -7,3 +7,6 @@ variable "endpoint_configuration_types" {
 variable "authorizer_lambda_invoke_arn" {
   type = string
 }
+variable "authorizer_lambda_arn" {
+  type = string
+}

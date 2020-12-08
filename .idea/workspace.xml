@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c8bc223-1631-4326-af6d-585d913f414a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/aws-apigateway-terraform.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="6c8bc223-1631-4326-af6d-585d913f414a" name="Default Changelist" comment="converting project to modular structure">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poc.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/poc.tfvars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stages.tf" beforeDir="false" afterPath="$PROJECT_DIR$/stages.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform.tfstate.backup" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +21,24 @@
       <option value="directory" />
     </option>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Terraform" />
+        <option value="Terraform Main" />
+        <option value="Terraform Output" />
+        <option value="Terraform variables" />
+        <option value="Terraform output" />
+        <option value="Terraform main" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsBowerSettings">
@@ -27,6 +47,9 @@
     <bower.json value="" />
   </component>
   <component name="ProjectId" id="1kgMKYBtNCeZToE5mgBinnZozhp" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -36,11 +59,14 @@
     <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HCL-Terraform" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/modules/mock-resource-module" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -49,31 +75,74 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="yiiguxing.plugin.translate" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
-    <configuration name="Plan directory aws-apigateway-terraform" type="#org.intellij.plugins.hcl.terraform.run.TerraformConfigurationType" factoryName="Terraform Plan" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modules/mock-resource-module" />
+      <recent name="$PROJECT_DIR$/modules/http-module" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/modules" />
+      <recent name="$PROJECT_DIR$/modules/api" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Terraform.Apply">
+    <configuration name="Apply" type="#org.intellij.plugins.hcl.terraform.run.TerraformConfigurationType" factoryName="Terraform Apply" show_console_on_std_err="false" show_console_on_std_out="false">
       <option name="allowRunningInParallel" value="false" />
       <option name="envs">
         <map />
       </option>
       <option name="passParentEnvs" value="true" />
-      <option name="programParameters" value="plan" />
+      <option name="programParameters" value="apply --var-file=poc.tfvars " />
       <option name="selectedOptions">
         <list />
       </option>
       <option name="workingDirectory" value="$PROJECT_DIR$" />
-      <option name="PROGRAM_PARAMETERS" value="plan" />
+      <option name="PROGRAM_PARAMETERS" value="apply --var-file=poc.tfvars " />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Terraform.Plan directory aws-apigateway-terraform" />
-      </list>
-    </recent_temporary>
+    <configuration name="Init" type="#org.intellij.plugins.hcl.terraform.run.TerraformConfigurationType" factoryName="Terraform" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="init" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <option name="PROGRAM_PARAMETERS" value="init" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Plan" type="#org.intellij.plugins.hcl.terraform.run.TerraformConfigurationType" factoryName="Terraform Plan" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="plan --var-file=poc.tfvars " />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <option name="PROGRAM_PARAMETERS" value="plan --var-file=poc.tfvars " />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Terraform.Apply" />
+      <item itemvalue="Terraform.Init" />
+      <item itemvalue="Terraform.Plan" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -83,8 +152,96 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606117719820</updated>
-      <workItem from="1606117722536" duration="4479000" />
+      <workItem from="1606117722536" duration="19931000" />
+      <workItem from="1606294384868" duration="3852000" />
+      <workItem from="1606375505052" duration="2210000" />
+      <workItem from="1606381926937" duration="523000" />
+      <workItem from="1606382718686" duration="12512000" />
+      <workItem from="1606475430008" duration="2149000" />
+      <workItem from="1606565055917" duration="1968000" />
+      <workItem from="1606752017530" duration="426000" />
+      <workItem from="1606851906824" duration="3876000" />
+      <workItem from="1606995215664" duration="18701000" />
+      <workItem from="1607343136374" duration="3497000" />
     </task>
+    <task id="LOCAL-00001" summary="added description for the CLI command in README.md">
+      <created>1606123468822</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606123468822</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added description of execution hierarchy for the CLI command in README.md">
+      <created>1606210877509</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606210877509</updated>
+    </task>
+    <task id="LOCAL-00003" summary="converting project to modular structure">
+      <created>1606230269037</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606230269038</updated>
+    </task>
+    <task id="LOCAL-00004" summary="occurred an lambda execution error">
+      <created>1606314022882</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606314022882</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Authorizer invocation problem solved">
+      <created>1606394114210</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606394114210</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added modular parent - child resource">
+      <created>1606418521362</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606418521363</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added mock-resource-module phase 1">
+      <created>1606643434398</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606643434398</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Mock data phase 2 and added stage">
+      <created>1606856986930</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606856986930</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Cleared unnecessary files">
+      <created>1606930431723</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606930431723</updated>
+    </task>
+    <task id="LOCAL-00010" summary="execution priority problem">
+      <created>1607038388164</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607038388164</updated>
+    </task>
+    <task id="LOCAL-00011" summary="execution priority problem resolved">
+      <created>1607101085231</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1607101085232</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,10 +252,48 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="modular" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="COLUMN_ID_WIDTH">
+                <map>
+                  <entry key="Table.Default.Author.ColumnIdWidth" value="114" />
+                  <entry key="Table.Default.Date.ColumnIdWidth" value="108" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="added description for the CLI command in README.md" />
+    <MESSAGE value="added description of execution hierarchy for the CLI command in README.md" />
+    <MESSAGE value="converting project to modular structure" />
+    <MESSAGE value="occurred an lambda execution error" />
+    <MESSAGE value="Authorizer invocation problem solved" />
+    <MESSAGE value="added modular parent - child resource" />
+    <MESSAGE value="added mock-resource-module phase 1" />
+    <MESSAGE value="Mock data phase 2 and added stage" />
+    <MESSAGE value="Cleared unnecessary files" />
+    <MESSAGE value="execution priority problem" />
+    <MESSAGE value="execution priority problem resolved" />
+    <option name="LAST_COMMIT_MESSAGE" value="execution priority problem resolved" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
