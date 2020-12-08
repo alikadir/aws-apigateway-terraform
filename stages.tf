@@ -7,6 +7,10 @@ resource "time_sleep" "wait_3_second" {
 resource "aws_api_gateway_deployment" "dev_deployment" {
   rest_api_id = module.API.rest_api_id
   depends_on  = [time_sleep.wait_3_second]
+  stage_name  = "dev"
+  lifecycle {
+    create_before_destroy = true
+  }
 }
 
 resource "aws_api_gateway_stage" "dev_stage" {
@@ -15,7 +19,7 @@ resource "aws_api_gateway_stage" "dev_stage" {
   stage_name    = "dev"
 }
 
-resource "aws_api_gateway_method_settings" "settings" {
+resource "aws_api_gateway_method_settings" "dev_stage_settings" {
   rest_api_id = module.API.rest_api_id
   stage_name  = aws_api_gateway_stage.dev_stage.stage_name
   method_path = "*/*"

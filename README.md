@@ -30,6 +30,7 @@ should be ttl = 0
 
 ### stage depends_on all module 
 that is big problem!!
+(I've fixed with timer delay)
 
 ### list sample
 - [ ] unchecked item

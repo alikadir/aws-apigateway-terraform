@@ -5,8 +5,8 @@ exports.handler = async (event) => {
   try {
     jwt.verify(encodedToken, "your-256-bit-secret");
     return generatePolicy("*", "Allow", event.methodArn, {
-      name: "ali kadir",
-      age: 31,
+      name: "ali kadir.",
+      age: 32,
     });
   } catch (err) {
     console.log("gelen event ", event);
@@ -20,7 +20,7 @@ const getEncodedToken = (header) => {
 };
 
 const generatePolicy = (principalId, effect, resource, context) => {
-  var authResponse = {};
+  let authResponse = {};
 
   authResponse.principalId = principalId;
   if (effect && resource) {

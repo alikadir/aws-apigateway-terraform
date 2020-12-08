@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c8bc223-1631-4326-af6d-585d913f414a" name="Default Changelist" comment="converting project to modular structure">
+      <change afterPath="$PROJECT_DIR$/modules/api/endpoint-mock.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/api/endpoint-tvguide.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terraform.tfstate.backup" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/api/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/api/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/lambda/files/app.zip" beforeDir="false" afterPath="$PROJECT_DIR$/modules/lambda/files/app.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stages.tf" beforeDir="false" afterPath="$PROJECT_DIR$/stages.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfstate" afterDir="false" />
     </list>
@@ -144,13 +148,6 @@
       <item itemvalue="Terraform.Init" />
       <item itemvalue="Terraform.Plan" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Terraform.Plan" />
-        <item itemvalue="Terraform.Plan" />
-        <item itemvalue="Terraform.Plan" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -169,7 +166,8 @@
       <workItem from="1606565055917" duration="1968000" />
       <workItem from="1606752017530" duration="426000" />
       <workItem from="1606851906824" duration="3876000" />
-      <workItem from="1606995215664" duration="17228000" />
+      <workItem from="1606995215664" duration="18701000" />
+      <workItem from="1607343136374" duration="3497000" />
     </task>
     <task id="LOCAL-00001" summary="added description for the CLI command in README.md">
       <created>1606123468822</created>
@@ -241,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607038388164</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="execution priority problem resolved">
+      <created>1607101085231</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1607101085232</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +294,8 @@
     <MESSAGE value="Mock data phase 2 and added stage" />
     <MESSAGE value="Cleared unnecessary files" />
     <MESSAGE value="execution priority problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="execution priority problem" />
+    <MESSAGE value="execution priority problem resolved" />
+    <option name="LAST_COMMIT_MESSAGE" value="execution priority problem resolved" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
