@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c8bc223-1631-4326-af6d-585d913f414a" name="Default Changelist" comment="converting project to modular structure">
-      <change afterPath="$PROJECT_DIR$/modules/api/endpoint-mock.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/api/endpoint-tvguide.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/terraform.tfstate.backup" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/api/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/api/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/lambda/files/app.zip" beforeDir="false" afterPath="$PROJECT_DIR$/modules/lambda/files/app.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poc.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/poc.tfvars" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stages.tf" beforeDir="false" afterPath="$PROJECT_DIR$/stages.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform.tfstate.backup" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +75,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
