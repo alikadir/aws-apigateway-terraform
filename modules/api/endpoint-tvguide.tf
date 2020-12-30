@@ -12,7 +12,7 @@ module "themes" {
   rest_api_id                = aws_api_gateway_rest_api.sample_api.id
   parent_or_root_resource_id = module.Parent_TvGuide.id
   endpoint_name              = "themes"
-  endpoint_url               = "http://api-worker-tvguide.digiturk.com.tr/api/themes"
+  endpoint_url               = "http://api-xxx.com.tr/api/themes"
 
 }
 
@@ -22,7 +22,7 @@ module "channels" {
   rest_api_id                = aws_api_gateway_rest_api.sample_api.id
   parent_or_root_resource_id = module.Parent_TvGuide.id
   endpoint_name              = "channels"
-  endpoint_url               = "http://api-worker-tvguide.digiturk.com.tr/api/channels"
+  endpoint_url               = "http://api-xxx.com.tr/api/channels"
 }
 
 module "channelByChannelNo" {
@@ -31,7 +31,7 @@ module "channelByChannelNo" {
   rest_api_id                = aws_api_gateway_rest_api.sample_api.id
   parent_or_root_resource_id = module.Parent_TvGuide.id
   endpoint_name              = "channelByChannelNo"
-  endpoint_url               = "http://api-worker-tvguide.digiturk.com.tr/api/channelByChannelNo"
+  endpoint_url               = "http://api-xxx.com.tr/api/channelByChannelNo"
 }
 
 module "channelsCurrentProgram" {
@@ -40,7 +40,7 @@ module "channelsCurrentProgram" {
   rest_api_id                = aws_api_gateway_rest_api.sample_api.id
   parent_or_root_resource_id = module.Parent_TvGuide.id
   endpoint_name              = "channelsCurrentProgram"
-  endpoint_url               = "http://api-worker-tvguide.digiturk.com.tr/api/channelsCurrentProgram"
+  endpoint_url               = "http://api-xxx.com.tr/api/channelsCurrentProgram"
 }
 
 module "channelsCurrentProgramSingleChannel" {
@@ -49,7 +49,7 @@ module "channelsCurrentProgramSingleChannel" {
   rest_api_id                = aws_api_gateway_rest_api.sample_api.id
   parent_or_root_resource_id = module.Parent_TvGuide.id
   endpoint_name              = "channelsCurrentProgramSingleChannel"
-  endpoint_url               = "http://api-worker-tvguide.digiturk.com.tr/api/channelsCurrentProgramSingleChannel"
+  endpoint_url               = "http://api-xxx.com.tr/api/channelsCurrentProgramSingleChannel"
 }
 
 module "singleChannelByDateRange" {
@@ -58,7 +58,7 @@ module "singleChannelByDateRange" {
   rest_api_id                = aws_api_gateway_rest_api.sample_api.id
   parent_or_root_resource_id = module.Parent_TvGuide.id
   endpoint_name              = "singleChannelByDateRange"
-  endpoint_url               = "http://api-worker-tvguide.digiturk.com.tr/api/singleChannelByDateRange"
+  endpoint_url               = "http://api-xxx.com.tr/api/singleChannelByDateRange"
 }
 
 module "channelsCurrentProgramBySatelliteType" {
@@ -67,7 +67,7 @@ module "channelsCurrentProgramBySatelliteType" {
   rest_api_id                = aws_api_gateway_rest_api.sample_api.id
   parent_or_root_resource_id = module.Parent_TvGuide.id
   endpoint_name              = "channelsCurrentProgramBySatelliteType"
-  endpoint_url               = "http://api-worker-tvguide.digiturk.com.tr/api/channelsCurrentProgramBySatelliteType"
+  endpoint_url               = "http://api-xxx.com.tr/api/channelsCurrentProgramBySatelliteType"
 }
 
 module "broadcastDetail" {
@@ -76,7 +76,7 @@ module "broadcastDetail" {
   rest_api_id                = aws_api_gateway_rest_api.sample_api.id
   parent_or_root_resource_id = module.Parent_TvGuide.id
   endpoint_name              = "broadcastDetail"
-  endpoint_url               = "http://api-worker-tvguide.digiturk.com.tr/api/broadcastDetail"
+  endpoint_url               = "http://api-xxx.com.tr/api/broadcastDetail"
 }
 
 module "search" {
@@ -85,5 +85,5 @@ module "search" {
   rest_api_id                = aws_api_gateway_rest_api.sample_api.id
   parent_or_root_resource_id = module.Parent_TvGuide.id
   endpoint_name              = "search"
-  endpoint_url               = "http://api-worker-tvguide.digiturk.com.tr/api/search"
+  endpoint_url               = "http://api-xxx.com.tr/api/search"
 }
