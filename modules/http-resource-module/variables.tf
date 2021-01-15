@@ -13,4 +13,7 @@ variable "endpoint_name" {
 variable "endpoint_url" {
   type = string
 }
-
+variable "use_proxy_parameter" {
+  type    = bool
+  default = false
+}
