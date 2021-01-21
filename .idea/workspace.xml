@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c8bc223-1631-4326-af6d-585d913f414a" name="Default Changelist" comment="converting project to modular structure">
+      <change afterPath="$PROJECT_DIR$/terraform.tfstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poc.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/poc.tfvars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stages.tf" beforeDir="false" afterPath="$PROJECT_DIR$/stages.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform.tfstate.backup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crash.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/api/endpoint-content.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/api/endpoint-content.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/api/endpoint-tvguide.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/api/endpoint-tvguide.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/http-resource-module/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/http-resource-module/main.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -290,7 +291,8 @@
     <MESSAGE value="Cleared unnecessary files" />
     <MESSAGE value="execution priority problem" />
     <MESSAGE value="execution priority problem resolved" />
-    <option name="LAST_COMMIT_MESSAGE" value="execution priority problem resolved" />
+    <MESSAGE value="aktarim" />
+    <option name="LAST_COMMIT_MESSAGE" value="aktarim" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

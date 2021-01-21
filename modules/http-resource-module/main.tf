@@ -25,7 +25,7 @@ resource "aws_api_gateway_integration" "my_resource_http_integration" {
   uri                     = var.endpoint_url
 
   cache_key_parameters = var.use_proxy_parameter ? ["method.request.path.proxy"] : []
-  
+
   request_parameters = var.use_proxy_parameter ? {
     "integration.request.path.proxy" = "method.request.path.proxy"
   } : {}
