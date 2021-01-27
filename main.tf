@@ -1,7 +1,7 @@
 module "Authenticator_Lambda" {
-  source           = "./modules/lambda"
-  function_name    = var.function_name
-  function_handler = var.function_handler
+  source           = "./modules/auth-lambda"
+  function_name    = "AuthenticatorFunction"
+  function_handler = "index.handler"
 }
 
 module "API" {
